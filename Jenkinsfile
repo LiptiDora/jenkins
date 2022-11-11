@@ -19,5 +19,12 @@ tools{
 				}
         
     }
+	    
+	    stage("codereview"){
+			  steps{
+			    sh 'mvn pwd:pwd'
+				}
+        
+    }
 }
 }
