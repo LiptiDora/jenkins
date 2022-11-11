@@ -20,9 +20,9 @@ tools{
         
     }
 	    
-	    stage("codereview"){
+	    stage("package"){
 			  steps{
-			    sh 'mvn pwd:pwd'
+			    sh 'mvn package'
 				}
         
     }
